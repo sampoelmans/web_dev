@@ -1,0 +1,11 @@
+version: '3.3'
+services:
+  web:
+        buid:
+         context: ./php
+         dockerfile: Dockerfile 
+        container_name: php73
+        volumes:
+           - ./php:/var/www/html/
+        ports:
+          - 8008:80
